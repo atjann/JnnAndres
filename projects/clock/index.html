@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clock</title>
+</head>
+<body>
+    <label onclick="myFunction()" class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+    </label>
+    <div id="days">
+        <span id="Sunday" class="day">Sunday</span>
+        <span id="Monday" class="day">Monday</span>
+        <span id="Tuesday" class="day">Tuesday</span>
+        <span id="Wednesday" class="day">Wednesday</span>
+        <span id="Thursday" class="day">Thursday</span>
+        <span id="Friday" class="day">Friday</span>
+        <span id="Saturday" class="day">Saturday</span>
+    </div>
+    <div class="clock">
+        <p id="time"></p>
+    </div>
+        <footer>
+            <button id="alarm-button">Alarm</button>
+                <input type="time" id="alarm-input" style="display: none;">
+            <button id="show-time-zone-button">world time</button>
+                <select id="world-clock" style="display: none;"></select>
+                <a href="timer.html"><button id="timer-button">Timer</button></a>
+        </footer>
+
+    <audio id="alarm-sound"> <source src="alarm-sound.mp3" type="audio/mpeg"></audio>
+    <script src="clock.js"></script>
+</body>
+</html>
